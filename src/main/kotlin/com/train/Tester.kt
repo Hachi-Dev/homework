@@ -3,21 +3,21 @@ package com.train
 import java.util.*
 
 fun main() {
-    val scanner = Scanner(System.`in`);
+    val scanner = Scanner(System.`in`)
 
-    print("Please enter number of tickets:");
-    var TicketNum = scanner.nextInt();
+    print("Please enter number of tickets:")
+    var ticketNum = scanner.nextInt()
 
-    print("How many round-trip tickets:");
-    var RoundNum = scanner.nextInt();
+    print("How many round-trip tickets:")
+    var roundNum = scanner.nextInt()
 
-    var total = Total(TicketNum,RoundNum);
-    print("Total:"+total.amount());
+    var total = Total(ticketNum,roundNum)
+    print("Total:"+total.amount())
 }
 
-class Total(var TicketNum:Int, var RoundNum:Int){
+class Total(var ticketNum:Int, var roundNum:Int){
     fun amount():Float{
-        var total = 1000*(TicketNum - RoundNum)+2000*RoundNum*0.9f;
-        return total;
+        var total = 1000*(ticketNum - roundNum)+2000*roundNum*0.9f
+        return total
     }
 }

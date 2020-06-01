@@ -1,16 +1,16 @@
 package com.train;
 
 public class Ticket {
-    int TicketNum;
-    int RoundNum;
+    int ticketNum;
+    int roundNum;
     float total;
 
-    public Ticket(int TicketNum, int RoundNum) {
-        this.TicketNum = TicketNum;
-        this.RoundNum = RoundNum;
+    public Ticket(int ticketNum, int roundNum) {
+        this.ticketNum = ticketNum;
+        this.roundNum = roundNum;
     }
     public float amount(){
-        total = 1000*(TicketNum-RoundNum) + 2000*RoundNum*0.9f;
+        total = 1000*(ticketNum-roundNum) + 2000*roundNum*0.9f;
         return total;
     }
 }

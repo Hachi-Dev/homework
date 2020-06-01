@@ -7,12 +7,12 @@ public class Tester {
 
         System.out.print("Please enter number of tickets:");
         Scanner scanner = new Scanner(System.in);
-        int TicketNum = scanner.nextInt();
+        int ticketNum = scanner.nextInt();
 
         System.out.print("How many round-trip tickets:");
-        int RoundNum = scanner.nextInt();
+        int roundNum = scanner.nextInt();
 
-        Ticket t = new Ticket(TicketNum,RoundNum);
+        Ticket t = new Ticket(ticketNum,roundNum);
         System.out.print("Total:"+ t.amount());
     }
 }
